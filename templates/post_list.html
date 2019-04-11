@@ -1,0 +1,12 @@
+<!-- index.html -->
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head></head>
+    <body>
+        <h1>投稿内容 一覧ページ</h1>
+        {% for post_list in post_list %}
+        <p>{{ post_list.title }}</p>
+        {% endfor %}
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!-- index.html -->
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head></head>
+    <body>
+
+        <form action="/sample" method="post">
+            title  <br>
+            <input type="text" name="title" value=""><br>
+            text   <br>
+            <textarea name="opinion" rows="8" cols="50"></textarea><br>
+            <input type="submit" value="送信">
+            {% for result in result %}
+            <p>{{ result.id }}</p>
+            {% endfor %}
+        </form>
+    </body>
+</html>
